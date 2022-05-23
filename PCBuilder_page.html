@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вітальна сторінка</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/pcbuilder.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!--HEADER-->
+<header>
+    <section class="header_section" id="_header">
+        <nav class="navbar">
+            <img class="logo_img" src="assets/files/images/PC101.png" alt="">
+            <input type="checkbox" id="toggler">
+            <label for="toggler"><i class="fa fa-bars"></i></label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="index.html"><i class="fa fa-home"></i> Головна</a></li>
+                    <li><a href="repository_page.html"><i class="fa fa-folder-open"></i> Репозиторій</a></li>
+                    <li><a href="PCBuilder_page.html"><i class="fa fa-gear"></i> Конструктор ПК</a></li>
+                    <li><a href="beginner_page.html"><i class="fa fa-beer"></i> Для чайників</a></li>
+                    <li><a href="about_us_page.html"><i class="fa fa-group"></i> Про нас</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</header>
+<!--HEADER-->
+
+
+<div id="builderOuter">
+    <div id="builderInnter">
+
+        <div id="innerRow">
+
+            <div class="option" id="option_G" onclick="chosenG()">
+                <img class="type_img" src="assets/files/images/pc_gaming.png">
+                <p>Gaming</p>
+            </div>
+
+            <div class="option" id="option_O" onclick="chosenO()">
+                <img class="type_img" src="assets/files/images/pc_office.png">
+                <p>Office</p>
+            </div>
+
+            <div class="option" id="option_P" onclick="chosenP()">
+                <img class="type_img" src="assets/files/images/pc_prof.png">
+                <p>Professional</p>
+            </div>
+
+        </div>
+
+        <div id="settings">
+            <div>
+                <p class="rangeTitle">Price range:</p>
+            </div>
+            <input type="range" min="0" max="2" value="1" class="slider" id="priceRange">
+            <div class="innerDiv">
+                <p>Low</p>
+                <p>Medium</p>
+                <p>High</p>
+            </div>
+
+            <div class="innerDiv">
+                <p class="largerTitle">HDD storage(TB):</p>
+                <input type="range" min="0" max="10" value="1" class="slider" id="hddRange">
+                <h4 id="hddRangeInfo"></h4>
+            </div>
+
+            <div class="innerDiv">
+                <p class="largerTitle">SSD storage(TB):</p>
+                <input type="range" min="0" max="10" value="1" class="slider" id="ssdRange">
+                <h4 id="ssdRangeInfo"></h4>
+            </div>
+
+            <button class="button" onclick="buildPC()"><b>BUILD</b></button>
+
+        </div>
+
+    </div>
+
+    <div id="builderResult">
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>AMD</th>
+                    <th>Intel</th>
+                </tr>
+                <tr>
+                    <th>Processor</th>
+                    <td class="PC1"></td>
+                    <td class="PC2"></td>
+                </tr>
+                <tr>
+                    <th>Graphics Card</th>
+                    <td class="PC1"></td>
+                    <td class="PC2"></td>
+                </tr>
+                <tr>
+                    <th>Motherboard</th>
+                    <td class="PC1"></td>
+                    <td class="PC2"></td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td class="PC1"></td>
+                    <td class="PC2"></td>
+                </tr>
+                <tr>
+                    <th>PSU</th>
+                    <td class="PC1"></td>
+                    <td class="PC2"></td>
+                </tr>
+                <tr>
+                    <th>HDD/SSD</th>
+                    <td class="PC1"></td>
+                    <td class="PC2"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/pcbuilder.js"></script>
+
+<!--FOOTER-->
+<footer>
+    <div class="top_header">
+        <section>
+            <span><i class="fa fa-map-marker"></i></span>
+            <span>Україна, Львів, вул. С. Бандери, 12</span>
+        </section>
+        <section>
+            <span><i class="fa fa-phone"></i></span>
+            <span> (067) 20-520-401</span>
+        </section>
+        <section>
+            <span><i class="fa fa-envelope"></i></span>
+            <span>pc101support@gmail.com</span>
+        </section>
+    </div>
+    <span class="border-shape"></span>
+    <div class="bottom_content">
+        <section class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+        </section>
+        <section>
+            <a href="#">Степанчук Андрій</a>
+            <a href="#">Климчук Михайло</a>
+            <a href="#">Борак Дмитро</a>
+            <a href="#">Тизунь Андрій</a>
+        </section>
+    </div>
+    <div class="copyright">
+        РГР © 2022 PC101 - Всі права захищено
+    </div>
+</footer>
+<!--FOOTER-->
+</body>
+</html>

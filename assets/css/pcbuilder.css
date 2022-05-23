@@ -1,0 +1,202 @@
+#builderOuter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../assets/files/images/bg_gaming.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#builderInnter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    padding: 0;
+    width: 45%;
+    height: 600px;
+    background-color: rgb(78, 78, 78);
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #313639;
+}
+
+#innerRow{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.type_img{
+    width: 35%;
+    height: 35%;
+}
+
+.option{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+    box-shadow: none;
+}
+
+.option p{
+    font-size: larger;
+}
+
+.option:hover{
+    width: 33%;
+    height: 100%;
+}
+
+.option:hover img{
+    transition: 0.2s;
+    width: 40%;
+    height: 40%;
+}
+
+#settings{
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0px;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#settings p{
+    margin: 10px;
+    align-self: flex-start;
+}
+
+.innerDiv{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+#option_G{
+    border-top-left-radius: 15px;
+}
+#option_P{
+    border-top-right-radius: 15px;
+}
+
+.innerDiv p{
+    padding-top: 10px;
+    text-align:center;
+    width: 30%;
+}
+.innerDiv h4{
+    width: 20%;
+}
+.innerDiv input{
+    align-self:center;
+    width: 50%;
+}
+
+/*  Slider  */
+.slider {
+    appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 20px;
+
+    background: #313639;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: #FFBE00;
+    cursor: pointer;
+}
+
+.button{
+    transition: 0.3s;
+    font-size: large;
+    width: 100%;
+    height: 80px;
+    color: #FFBE00;
+    background-color: #313639;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.button:hover{
+    transition: 0.3s;
+    color: #313639;
+    background-color: #FFBE00;
+}
+
+#builderResult {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: #FFBE00;
+    margin: 40px;
+    padding: 10px;
+    width: 45%;
+
+    background-color: #313639;
+    border: 3px solid black;
+    border-top: 3px solid black;
+    border-radius: 15px;
+}
+
+#builderResult table th{
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#builderResult table td{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.rangeTitle{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.largerTitle{
+    font-size: 18px;
+}

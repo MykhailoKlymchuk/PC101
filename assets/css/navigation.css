@@ -1,0 +1,64 @@
+/*navigation*/
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #313639;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    margin: 5px 15px 5px 35px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+}
+
+.effect{
+    padding-bottom: 5px;
+    background-image: linear-gradient(
+            transparent 0%,
+            transparent 90%,
+            #ffbe00 90%,
+            #ffbe00 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+    background-position-y: bottom;
+
+    transition: background-size 300ms;
+}
+.effect:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+}
+
+.openbtn {
+    top: 10px;
+    margin: 75px 0 0 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #313639;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    border-radius: 30%;
+}
+
+/*navigation*/
